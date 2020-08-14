@@ -5,7 +5,7 @@ body {
     background-position: center;
     background-repeat: repeat-y;
     background-size: 100%;
-    color: white;
+    color:white;
 }
 
 /* LINKS ------------------------------------------------------------------------------------------*/
@@ -129,7 +129,7 @@ a {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.90);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -141,13 +141,13 @@ a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.5s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: rgba(150, 50, 50);
 }
 
 .sidenav .closebtn {
@@ -301,12 +301,38 @@ a {
 
 /* BOOKING ----------------------------------------------------------------------------------------*/
 
-.booking {
+.booking-large {
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: 25px;
-    background: rgba(0, 0, 0, 0.4);
+    padding: 25px 25px 35px 25px;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.booking-small {
+    display: none;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.booking-small a {
+    font-family: primary;
+    background-color: rgba(150, 50, 50);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.booking-small a:hover {
+    cursor: pointer;
+    background-color: rgba(150, 50, 50, 0.8);
 }
 
 .booking-bottom {
@@ -351,6 +377,7 @@ a {
     font-family: secondary;
     font-size: 14px;
     margin: 0;
+    text-align: center;
 }
 
 .home-details button {
@@ -1874,13 +1901,459 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES ----------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 430px) { /*---------------------------------------------------------*/
+
+    .header {
+        grid-template-areas: 
+            "logo . calendar map phone bars";
+        grid-template-columns: 40% auto 46px 46px 46px 46px;
+    }
+    
+    .header .calendar img {
+        height: 23px;
+    }
+    
+    .header .map img {
+        height: 23px;
+    }
+    
+    .header .phone img {
+        height: 23px;
+    }
+    
+    .bars img {
+        height: 23px;
+    }
+
+    .galleryContainer{
+        height: 270px;
+    }
+
+    .lodging-details {
+        grid-template-columns: 60px 0px auto 60px 0px auto;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 414px) { /*---------------------------------------------------------*/
+    .page-header {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 412px) { /*---------------------------------------------------------*/
+
+}
+
+@media screen and (max-width: 400px) { /*---------------------------------------------------------*/
+    
+    .logo {
+        height: 47px;
+    }
+
+    .page-header {
+        font-size: 14px;
+    }
+
+    .lodging-details {
+        grid-template-columns: 50px 0px auto 50px 0px auto;
+    }
+
+    .lodging-details img {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .price-disclaimer {
+        margin: 0 25px 0 0;
+    }
+    
+    .book-lodging button {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 390px) { /*---------------------------------------------------------*/
+
+    .logo {
+        height: 45px;
+    }
+
+    .galleryContainer{
+        height: 260px;
+    }
+
+    .booking-large {
+        display: none;
+    }
+
+    .booking-small {
+        display: grid;
+    }
+
+}
+
+@media screen and (max-width: 380px) { /*---------------------------------------------------------*/
+    
+    .logo {
+        height: 43px;
+    }
+
+    .lodging-pricing {
+        grid-gap: 0 15px;
+    }
+    
+    .weekday {
+        letter-spacing: 1px; 
+    }
+    
+    .weekend {
+        letter-spacing: 1px;
+    }
+    
+    .weekday-price {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+}
+
+@media screen and (max-width: 375px) { /*---------------------------------------------------------*/
+
+    .galleryContainer{
+        height: 250px;
+    }
+
+    .page-header {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 370px) { /*---------------------------------------------------------*/
+
+    .logo {
+        height: 41px;
+    }
+
+    .galleryContainer{
+        height: 250px;
+    }
+
+    .home-attraction .date {
+        font-size: 15px;
+    }
+
+    .lodging-details {
+        font-size: 14px;
+    }
+
+    .lodging-pricing {
+        margin: 0 0 0 15px;
+    }
+
+    .book-lodging {
+        margin: 0 15px 0 0;
+    }
+
+    .price-disclaimer {
+        margin: 0 20px 0 0;
+    }
+    
+    .lodging-description {
+        font-size: 13px;
+        margin: 15px 15px 20px 15px;
+    }
+}
+
+
+@media screen and (max-width: 360px) { /*---------------------------------------------------------*/
+
+    .logo {
+        height: 40px;
+    }
+
+    .header {
+        grid-template-areas: 
+            "logo . calendar map phone bars";
+        grid-template-columns: 40% auto 45px 45px 45px 45px;
+    }
+    
+    .header .calendar img {
+        height: 22px;
+    }
+    
+    .header .map img {
+        height: 22px;
+    }
+    
+    .header .phone img {
+        height: 22px;
+    }
+    
+    .bars img {
+        height: 22px;
+    }
+
+    .galleryContainer{
+        height: 245px;
+    }
+
+    .lodging-details {
+        grid-template-columns: 40px 0px auto 40px 0px auto;
+    }
+
+    .lodging-details img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) { /*---------------------------------------------------------*/
+
+    .header {
+        grid-template-areas: 
+            "logo . calendar map phone bars";
+        grid-template-columns: 40% auto 42px 42px 42px 42px;
+    }
+    
+    .header .calendar img {
+        height: 21px;
+    }
+    
+    .header .map img {
+        height: 21px;
+    }
+    
+    .header .phone img {
+        height: 21px;
+    }
+    
+    .bars img {
+        height: 21px;
+    }
+
+    .page-header {
+        font-size: 12px;
+    }
+
+    .galleryContainer{
+        height: 235px;
+    }
+
+    .home-attraction .date {
+        font-size: 14px;
+    }
+
+    .footer-info {
+        font-size: 12px;
+        grid-template-columns: 150px auto;
+    }
+
+    .contact-info {
+        grid-template-columns: 35px 135px;
+
+    }
+
+    .social {
+        grid-template-columns: 30px 30px 30px;
+    }
+
+    .facebook img {
+        height: 20px;
+    }
+    
+    .instagram img {
+        height: 20px;
+    }
+    
+    .google img {
+        height: 20px;
+    }
+
+    .weekday {
+        font-size: 10px;
+        letter-spacing: 0.5px; 
+    }
+    
+    .weekend {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+    
+    .weekday-price {
+        letter-spacing: 2px;
+    }
+    
+    .weekend-price {
+        letter-spacing: 2px;
+    }
+
+}
+
+@media screen and (max-width: 340px) { /*---------------------------------------------------------*/
+
+    .header {
+        grid-template-areas: 
+            "logo . calendar map phone bars";
+        grid-template-columns: 40% auto 40px 40px 40px 40px;
+    }
+
+    .logo {
+        height: 38px;
+    }
+    
+    .header .calendar img {
+        height: 20px;
+    }
+    
+    .header .map img {
+        height: 20px;
+    }
+    
+    .header .phone img {
+        height: 20px;
+    }
+    
+    .bars img {
+        height: 20px;
+    }
+
+    .galleryContainer{
+        height: 230px;
+    }
+
+    .weekday {
+        font-size: 9px;
+    }
+    
+    .weekend {
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .lodging-details {
+        grid-template-columns: 40px 0px auto 40px 0px auto;
+        font-size: 13px;
+    }
+
+    .lodging-details img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .book-lodging button {
+        padding: 10px 13px;
+    }
+
+    .price-disclaimer {
+        margin: 0 19px 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) { /*---------------------------------------------------------*/
+
+    .header {
+        grid-template-areas: 
+            "logo . calendar map phone bars";
+        grid-template-columns: 40% auto 38px 38px 38px 38px;
+    }
+
+    .logo {
+        height: 37px;
+    }
+    
+    .header .calendar img {
+        height: 19px;
+    }
+    
+    .header .map img {
+        height: 19px;
+    }
+    
+    .header .phone img {
+        height: 19px;
+    }
+    
+    .bars img {
+        height: 19px;
+    }
+
+    .galleryContainer{
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 600px) { /*---------------------------------------------------------*/
 
     .galleryContainer{
         height: 400px;
-}
+    }
 
 .home-historic .history {
     margin: 15px 25px 0px 25px;
@@ -1894,7 +2367,7 @@ footer {
     padding: 15px 20px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) { /*---------------------------------------------------------*/
 
 .galleryContainer{
     height: 475px;
@@ -1924,7 +2397,7 @@ footer {
     display: grid;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) { /*---------------------------------------------------------*/
 
     .galleryContainer {
         height: 545px;
@@ -1952,8 +2425,8 @@ footer {
 
 }
 
-@media screen and (min-width: 900px) {
-
+@media screen and (min-width: 900px) { /*---------------------------------------------------------*/
+ 
     .galleryContainer{
         height: 600px;
     }
@@ -2070,11 +2543,11 @@ footer {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) { /*--------------------------------------------------------*/
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) { /*--------------------------------------------------------*/
 
     .header {
         grid-template-areas: 
@@ -2117,7 +2590,7 @@ footer {
 }
 
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1350px) { /*--------------------------------------------------------*/
     .more-attractions a {
         display: grid;
     }
