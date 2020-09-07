@@ -339,6 +339,10 @@ a {
     margin-top: 20px;
 }
 
+.booking-script {
+    white-space: nowrap;
+}
+
 /* HOME -------------------------------------------------------------------------------------------*/
 
 .home-container {
@@ -365,19 +369,22 @@ a {
     font-family: primary;
     font-size: 22px;
     margin: 15px 0 5px 0;
+    white-space: nowrap;
 }
 
 .home-details h2 {
     font-family: primary;
     font-size: 22px;
     margin: 15px 0 5px 0;
+    white-space: nowrap;
 }
 
-.home-details p {
+.home-details h3 {
     font-family: secondary;
     font-size: 14px;
     margin: 0;
     text-align: center;
+    white-space: nowrap;
 }
 
 .home-details button {
@@ -401,8 +408,9 @@ a {
     color: rgba(64, 45, 37);
 }
 
-.home-historic .date {
+.date {
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .home-historic .history {
@@ -836,6 +844,7 @@ a {
     color: rgba(64, 45, 37);
     font-family: primary;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .lodging-details img {
@@ -1035,7 +1044,7 @@ a {
     display: grid;
     grid-template-areas: 
         'pricing book'
-        'pricing disclaimer';
+        'pricing book';
         grid-template-rows: 60px 20px;
     align-items: center;
     justify-items: center;
