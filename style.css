@@ -2004,6 +2004,14 @@ footer {
         font-size: 15px;
     }
 
+    .booking-large {
+        display: none;
+    }
+
+    .booking-small {
+        display: grid;
+    }
+
 }
 
 @media screen and (max-width: 414px) { /*---------------------------------------------------------*/
