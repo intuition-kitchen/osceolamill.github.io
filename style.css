@@ -2004,14 +2004,6 @@ footer {
         font-size: 15px;
     }
 
-    .booking-large {
-        display: none;
-    }
-
-    .booking-small {
-        display: grid;
-    }
-
 }
 
 @media screen and (max-width: 414px) { /*---------------------------------------------------------*/
@@ -2372,16 +2364,26 @@ footer {
         height: 400px;
     }
 
-.home-historic .history {
-    margin: 15px 25px 0px 25px;
-}
+    .home-historic .history {
+        margin: 15px 25px 0px 25px;
+    }
 
-.home-attractions .attractions {
-    margin: 25px 25px 0px 25px;
-}
+    .home-attractions .attractions {
+        margin: 25px 25px 0px 25px;
+    }
 
-footer {
-    padding: 15px 20px;
+    footer {
+        padding: 15px 20px;
+    }
+
+    .booking-large {
+        display: none;
+    }
+
+    .booking-small {
+        display: grid;
+    }
+
 }
 
 @media screen and (min-width: 700px) { /*---------------------------------------------------------*/
