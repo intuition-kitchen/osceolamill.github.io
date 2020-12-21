@@ -1971,6 +1971,102 @@ footer {
 
 /* MEDIA QUERIES ----------------------------------------------------------------------------------*/
 
+@media screen and (max-width: 480px) {
+    .galleryContainer {
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .galleryContainer {
+        height: 284px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .galleryContainer {
+        height: 278px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .galleryContainer {
+        height: 272px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .galleryContainer {
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .galleryContainer {
+        height: 259px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .galleryContainer {
+        height: 253px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .galleryContainer {
+        height: 247px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .galleryContainer {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .galleryContainer {
+        height: 234px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .galleryContainer {
+        height: 228px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .galleryContainer {
+        height: 222px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .galleryContainer {
+        height: 215px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .galleryContainer {
+        height: 209px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .galleryContainer {
+        height: 203px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .galleryContainer {
+        height: 197px;
+    }
+}
+
 @media screen and (max-width: 430px) { /*---------------------------------------------------------*/
 
     .header {
@@ -1993,10 +2089,6 @@ footer {
     
     .bars img {
         height: 23px;
-    }
-
-    .galleryContainer{
-        height: 270px;
     }
 
     .lodging-details {
@@ -2051,10 +2143,6 @@ footer {
         height: 45px;
     }
 
-    .galleryContainer{
-        height: 260px;
-    }
-
     .booking-large {
         display: none;
     }
@@ -2092,10 +2180,6 @@ footer {
 
 @media screen and (max-width: 375px) { /*---------------------------------------------------------*/
 
-    .galleryContainer{
-        height: 250px;
-    }
-
     .page-header {
         font-size: 13px;
     }
@@ -2106,10 +2190,6 @@ footer {
 
     .logo {
         height: 41px;
-    }
-
-    .galleryContainer{
-        height: 250px;
     }
 
     .home-attraction .date {
@@ -2167,10 +2247,6 @@ footer {
         height: 22px;
     }
 
-    .galleryContainer{
-        height: 245px;
-    }
-
     .lodging-details {
         grid-template-columns: 40px 0px auto 40px 0px auto;
     }
@@ -2207,10 +2283,6 @@ footer {
 
     .page-header {
         font-size: 12px;
-    }
-
-    .galleryContainer{
-        height: 235px;
     }
 
     .home-attraction .date {
@@ -2291,10 +2363,6 @@ footer {
         height: 20px;
     }
 
-    .galleryContainer{
-        height: 230px;
-    }
-
     .weekday {
         font-size: 9px;
     }
@@ -2352,16 +2420,12 @@ footer {
     .bars img {
         height: 19px;
     }
-
-    .galleryContainer{
-        height: 220px;
-    }
 }
 
 @media screen and (min-width: 600px) { /*---------------------------------------------------------*/
 
     .galleryContainer{
-        height: 400px;
+        height: 375px;
     }
 
     .home-historic .history {
@@ -2386,10 +2450,16 @@ footer {
 
 }
 
+@media screen and (min-width: 650px) {
+    .galleryContainer {
+        height: 406px;
+    }
+}
+
 @media screen and (min-width: 700px) { /*---------------------------------------------------------*/
 
 .galleryContainer{
-    height: 475px;
+    height: 437px;
 }
 
 .home-historic .history {
@@ -2416,10 +2486,16 @@ footer {
     display: grid;
 }
 
+@media screen and (min-width: 750px) {
+    .galleryContainer {
+        height: 468px;
+    }
+}
+
 @media screen and (min-width: 800px) { /*---------------------------------------------------------*/
 
     .galleryContainer {
-        height: 545px;
+        height: 500px;
     }
 
     .home-historic .history {
@@ -2444,10 +2520,16 @@ footer {
 
 }
 
+@media screen and (min-width: 850px) {
+    .galleryContainer {
+        height: 531px;
+    }
+}
+
 @media screen and (min-width: 900px) { /*---------------------------------------------------------*/
  
     .galleryContainer{
-        height: 600px;
+        height: 562px;
     }
 
     .home-historic .history {
@@ -2562,8 +2644,52 @@ footer {
     }
 }
 
-@media screen and (min-width: 1000px) { /*--------------------------------------------------------*/
+@media screen and (min-width: 950px) {
+    .galleryContainer {
+        height: 593px;
+    }
+}
 
+@media screen and (min-width: 1000px) { 
+    .galleryContainer {
+        height: 625px;
+    }
+}
+
+@media screen and (min-width: 1050px) { 
+    .galleryContainer {
+        height: 656px;
+    }
+}
+
+@media screen and (min-width: 1100px) { 
+    .galleryContainer {
+        height: 687px;
+    }
+}
+
+@media screen and (min-width: 1150px) { 
+    .galleryContainer {
+        height: 718px;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    .galleryContainer {
+        height: 750px;
+    }
+}
+
+@media screen and (min-width: 1250px) { 
+    .galleryContainer {
+        height: 781px;
+    }
+}
+
+@media screen and (min-width: 1300px) { 
+    .galleryContainer {
+        height: 800px;
+    }
 }
 
 @media screen and (min-width: 1280px) { /*--------------------------------------------------------*/
