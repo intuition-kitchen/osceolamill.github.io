@@ -409,7 +409,7 @@ a {
 }
 
 .date {
-    font-size: 22px;
+    font-size: 16px;
     white-space: nowrap;
 }
 
@@ -428,14 +428,9 @@ a {
     color: rgba(221, 209, 203);
 }
 
-.home-attraction .date {
-    font-size: 16px;
-}
-
 .home-attraction .attractions {
     margin: 25px 20px 0px 20px;
     text-align: justify;
-    font-size: 14px;
 
 }
 
