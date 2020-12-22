@@ -2369,6 +2369,15 @@ footer {
     .galleryContainer {
         height: 272px;
     }
+
+    .valentine-included {
+        font-size: 14px;
+        grid-template-areas: 
+            'stay-i stay wine-i wine'
+            'dinner-i dinner choco-i choco'
+            'breakf-i breakf flower-i flower'
+        ;
+    }
 }
 
 @media screen and (max-width: 435px) {
@@ -2407,15 +2416,6 @@ footer {
 @media screen and (max-width: 401px) {
     .valentine-header{ 
         font-size: 23px;
-    }
-
-    .valentine-included {
-        font-size: 14px;
-        grid-template-areas: 
-            'stay-i stay wine-i wine'
-            'dinner-i dinner choco-i choco'
-            'breakf-i breakf flower-i flower'
-        ;
     }
     
     .valentine-included img {
