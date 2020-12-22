@@ -1908,46 +1908,244 @@ footer {
 
 
 
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+
+.valentine-container {
+    display: grid;
+    grid-template-areas: 
+        'img text'
+        'img included-h'
+        'img included'
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 20% 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.valentine-img {
+    grid-area: img;
+}
+
+.valentine-img img {
+    width: 100%;
+}
+
+.valentine-text {
+    grid-area: text;
+    align-self: start;
+    display: grid;
+    grid-template-areas: 
+        'head'
+        'details';
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 50px 0 50px;
+}
+
+.valentine-header {
+    grid-area: head;
+    font-family: primary;
+    letter-spacing: 0.7pt;
+    font-size: 32px;
+}
+
+.valentine-details {
+    grid-area: details;
+    font-family: secondary;
+    font-size: 18px;
+}
+
+.valentine-included {
+    grid-area: included;
+    align-self: start;
+    display: grid;
+    grid-template-areas: 
+        'stay-i stay . wine-i wine'
+        'dinner-i dinner . choco-i choco'
+        'breakf-i breakf . flower-i flower'
+    ;
+    grid-gap: 15px 25px;
+    align-items: center;
+    font-size: 17px;
+
+
+}
+
+.valentine-included img {
+    width: 35px;
+    height: 35px;
+}
+
+.included-head {
+    grid-area: included-h;
+    font-family: primary;
+    letter-spacing: 0.7pt;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.stay-i {
+    grid-area: stay-i;
+}
+
+.stay {
+    grid-area: stay;
+}
+
+.wine-i {
+    grid-area: wine-i;
+}
+
+.wine {
+    grid-area: wine;
+}
+
+.dinner-i {
+    grid-area: dinner-i;
+}
+
+.dinner {
+    grid-area: dinner;
+}
+
+.breakf-i {
+    grid-area: breakf-i;
+}
+
+.breakf {
+    grid-area: breakf;
+}
+
+.choco-i {
+    grid-area: choco-i;
+}
+
+.choco {
+    grid-area: choco;
+}
+
+.flower-i {
+    grid-area: flower-i;
+}
+
+.flower {
+    grid-area: flower;
+}
 
 
 
+.valentine-booking {
+    display: grid;
+    grid-template-areas: 
+        'price date book';
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 125px;
+    background-color: rgba(64, 45, 37, 0.9);
+}
 
+.valentine-price {
+    grid-area: price;
+    display: grid;
+    grid-template-areas:
+        'suite-t suite-p . cabin-t cabin-p'
+    ;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
 
+.v-suite-text {
+    grid-area: suite-t;
+    font-size: 24px;
+    font-family: secondary;
+}
 
+.v-suite-price {
+    grid-area: suite-p;
+    font-size: 24px;
+    background-color:rgba(0, 0, 0, 0.30);
+    padding: 15px 30px;
+}
 
+.v-cabin-text {
+    grid-area: cabin-t;
+    font-size: 24px;
+    font-family: secondary;
+}
 
+.v-cabin-price {
+    grid-area: cabin-p;
+    font-size: 24px;
+    background-color:rgba(0, 0, 0, 0.30);
+    padding: 15px 30px;
+}
 
+.valentine-date {
+    grid-area: date;
+    display: grid;
+    grid-template-areas:
+        'limit'
+        'date'
+    ;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 30% 70%;
+    grid-gap: 7px;
+}
 
+.v-limited {
+    grid-area: limit;
+    font-size: 16px;
 
+}
 
+.v-dates {
+    grid-area: date;
+    font-size: 22px;
+}
 
+.valentine-book {
+    grid-area: book;
+    display: grid;
+    grid-template-areas:
+        'button'
+        'phone'
+    ;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    justify-items: center;
+}
 
+.valentine-book a {
+    font-family: primary;
+    background-color: rgba(150, 50, 50);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
 
+.valentine-book a:hover {
+    cursor: pointer;
+    background-color: rgba(150, 50, 50, 0.8);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.v-phone {
+    font-family: primary;
+    font-size: 14px;
+}
 
 
 
@@ -1965,6 +2163,181 @@ footer {
 
 
 /* MEDIA QUERIES ----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1050px) {
+    
+    .valentine-container {
+        display: grid;
+        grid-template-areas: 
+            'img'
+            'text'
+            'included-h'
+            'included';
+        grid-template-columns: 100%;
+        grid-template-rows: none;
+        padding-bottom: 25px;
+    }
+
+    .valentine-text {
+        padding: 0 30px 0 30px;
+    }
+
+    .valentine-header {
+        font-size: 26px;
+    }
+
+    .valentine-details {
+        font-size: 15px;
+        text-align: justify;
+    
+    }
+
+    .included-head {
+        font-size: 17px;
+        margin: 50px 0 25px 0;
+        text-align: center;
+    }
+
+    .valentine-included {
+        font-size: 15px;
+        margin-bottom: 15px;
+        grid-template-areas: 
+            'stay-i stay . wine-i wine'
+            'dinner-i dinner . choco-i choco'
+            'breakf-i breakf . flower-i flower'
+        ;
+        grid-gap: 15px 25px;
+        align-items: center;
+    }
+    
+    .valentine-included img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .valentine-booking {
+        display: grid;
+        grid-template-areas:
+            'price'
+            'date'
+            'book'
+        ;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        justify-items: center;
+        height: 270px;
+    }
+
+    .valentine-price {
+        display: grid;
+        grid-template-areas:
+        'suite-t suite-p cabin-t cabin-p';
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
+        grid-gap: none;
+        padding: 25px 0 40px 0;
+        margin: 0 20px 0 0;
+    }
+    .v-suite-text {
+        font-size: 18px;
+        padding: 0;
+        
+    }
+    .v-suite-price {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+    .v-cabin-text {
+        font-size: 18px;
+        padding: 0;
+    }
+    .v-cabin-price {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .valentine-date {
+        display: grid;
+        grid-template-areas:
+            'limit'
+            'date'
+        ;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: 30% 70%;
+        grid-gap: 5px;
+    }
+
+    .v-limited {
+        font-size: 14px;
+    
+    }
+    .v-dates {
+        font-size: 18px;
+    }
+
+    .valentine-book {
+        grid-template-rows: 80% 20%;
+        align-items: center;
+        justify-items: center;
+        margin: 25px 0 25px 0;
+    }
+
+    .v-phone {
+        font-size: 13px;
+        letter-spacing: 0.5pt;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
     .galleryContainer {
@@ -2016,9 +2389,38 @@ footer {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .valentine-header{ 
+        font-size: 25px;
+    }
+    .valentine-details{ 
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 405px) {
     .galleryContainer {
         height: 247px;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .valentine-header{ 
+        font-size: 23px;
+    }
+
+    .valentine-included {
+        font-size: 14px;
+        grid-template-areas: 
+            'stay-i stay wine-i wine'
+            'dinner-i dinner choco-i choco'
+            'breakf-i breakf flower-i flower'
+        ;
+    }
+    
+    .valentine-included img {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -2034,6 +2436,15 @@ footer {
     }
 }
 
+@media screen and (max-width: 377px) {
+    .valentine-header { 
+        font-size: 22px;
+    }
+    .valentine-details {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .galleryContainer {
         height: 228px;
@@ -2046,9 +2457,24 @@ footer {
     }
 }
 
+@media screen and (max-width: 364px) {
+    .valentine-header{ 
+        font-size: 21px;
+    }
+}
+
 @media screen and (max-width: 355px) {
     .galleryContainer {
         height: 215px;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .valentine-header{ 
+        font-size: 20px;
+    }
+    .valentine-details {
+        font-size: 13px;
     }
 }
 
@@ -2058,9 +2484,21 @@ footer {
     }
 }
 
+@media screen and (max-width: 339px) {
+    .valentine-header{ 
+        font-size: 19px;
+    }
+}
+
 @media screen and (max-width: 335px) {
     .galleryContainer {
         height: 203px;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .valentine-header{ 
+        font-size: 18px;
     }
 }
 
@@ -2647,6 +3085,64 @@ footer {
     .galleryContainer {
         height: 656px;
     }
+
+    .valentine-header {
+        font-size: 29px;
+    }
+
+    .valentine-details {
+        font-size: 14px;
+    }
+    .valentine-included {
+        font-size: 14px;
+    }
+    
+    .valentine-included img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .valentine-booking {
+        grid-template-areas: 
+            'price date book';
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .valentine-price {
+        grid-template-columns: 1fr 1fr 10px 1fr 1fr;
+        align-self: center;
+    }
+
+    .valentine-date {
+        align-self: center;
+    }
+
+    .valentine-book {
+        align-self: center;
+    }
+
+    .v-suite-text {
+        font-size: 18px;
+    }
+    .v-suite-price {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+    .v-cabin-text {
+        font-size: 18px;
+    }
+    .v-cabin-price {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .v-limited {
+        font-size: 14;
+    
+    }
+    .v-dates {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1100px) { 
@@ -2659,23 +3155,129 @@ footer {
     .galleryContainer {
         height: 718px;
     }
+
+    .valentine-header {
+        font-size: 32px;
+    }
+
+    .valentine-details {
+        font-size: 14px;
+    }
+    .valentine-included {
+        font-size: 14px;
+    }
+    
+    .valentine-included img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .valentine-booking {
+        grid-template-areas: 
+            'price date book';
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .valentine-price {
+        grid-template-columns: 1fr 1fr 10px 1fr 1fr;
+        align-self: center;
+    }
+
+    .valentine-date {
+        align-self: center;
+    }
+
+    .valentine-book {
+        align-self: center;
+    }
+
+    .v-suite-text {
+        font-size: 18px;
+    }
+    .v-suite-price {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+    .v-cabin-text {
+        font-size: 18px;
+    }
+    .v-cabin-price {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .v-limited {
+        font-size: 14;
+    
+    }
+    .v-dates {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1200px) { 
     .galleryContainer {
         height: 750px;
     }
+
 }
 
 @media screen and (min-width: 1250px) { 
     .galleryContainer {
         height: 781px;
     }
-}
+    .valentine-details {
+        font-size: 15px;
+    }
+    .valentine-included {
+        font-size: 15px;
+    }
+    
+    .valentine-included img {
+        width: 35px;
+        height: 35px;
+    }
 
-@media screen and (min-width: 1300px) { 
-    .galleryContainer {
-        height: 800px;
+    .valentine-booking {
+        grid-template-areas: 
+            'price date book';
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .valentine-price {
+        grid-template-columns: 1fr 1fr 15px 1fr 1fr;
+        align-self: center;
+    }
+
+    .valentine-date {
+        align-self: center;
+    }
+
+    .valentine-book {
+        align-self: center;
+    }
+
+    .v-suite-text {
+        font-size: 20px;
+    }
+    .v-suite-price {
+        font-size: 20px;
+        padding: 10px 25px;
+    }
+    .v-cabin-text {
+        font-size: 20px;
+    }
+    .v-cabin-price {
+        font-size: 20px;
+        padding: 10px 25px;
+    }
+
+    .v-limited {
+        font-size: 15px;
+    
+    }
+    .v-dates {
+        font-size: 20px;
     }
 }
 
@@ -2722,6 +3324,45 @@ footer {
 }
 
 
+@media screen and (min-width: 1300px) { 
+    .galleryContainer {
+        height: 800px;
+    }
+
+    .valentine-details {
+        font-size: 16px;
+    }
+
+    .valentine-included {
+        font-size: 16px;
+    }
+    
+    .valentine-included img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .valentine-price {
+        grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    }
+
+    .v-suite-text {
+        font-size: 24px;
+    }
+    .v-suite-price {
+        font-size: 24px;
+        padding: 15px 30px;
+    }
+    .v-cabin-text {
+        font-size: 24px;
+    }
+    .v-cabin-price {
+        font-size: 24px;
+        padding: 15px 30px;
+    }
+}
+
+
 @media screen and (min-width: 1350px) { /*--------------------------------------------------------*/
     .more-attractions a {
         display: grid;
@@ -2733,5 +3374,35 @@ footer {
 
     .book-now a {
         display: grid;
+    }
+
+    .valentine-details {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .valentine-details {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .included-head {
+        display: none;
+    }
+
+    .valentine-container {
+        grid-template-areas: 
+            'img text'
+            'img included'
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .valentine-included {
+        grid-area: included;
+        align-self: center;
     }
 }
