@@ -65,6 +65,10 @@ a {
     grid-area: mill;
 }
 
+.nav-menu {
+    grid-area: menu;
+}
+
 .nav-cabin {
     grid-area: cabin;
 }
@@ -1926,6 +1930,7 @@ footer {
     justify-items: center;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.7);
+    margin: 50px 0 0 0;
 }
 
 .valentine-img {
@@ -2289,6 +2294,1059 @@ footer {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.food-hero {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.food-hero img {
+    width: 100%;
+}
+
+.open-hours {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.open-hours h2 {
+    font-family: primary;
+    text-align: center;
+    letter-spacing: 0.5pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BREAKFAST ----------------------------------------------------------------------------------------- */
+
+.breakfast-menu {
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'hours'
+        'entrees'
+        'sides'
+        'juices'
+    ;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.9);
+    margin: 0;
+    padding: 15px 0 15px 0;
+    font-family: primary;
+    color: black;
+}
+
+.breakfast-menu h3 {
+    grid-area: title;
+    font-size: 15pt;
+    color:rgba(150, 50, 50);
+    text-align: center;
+}
+
+.brkeakfast-entrees {
+    grid-area: entrees;
+
+}
+
+.breakfast-sides {
+    grid-area: sides;
+    align-items: center;
+    justify-items: center;
+    padding: 0 100px 0 100px;
+}
+
+.menu-section {
+    grid-area: section;
+    font-family: primary;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: black;
+    margin: 15px 0 30px 0;
+}
+
+.menu-hours {
+    grid-area: hours;
+    font-size: 12pt;
+    color:rgba(150, 50, 50);
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.menu-item {
+    grid-area: item;
+    font-family: primary;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: black;
+}
+
+.menu-description {
+    grid-area: descr;
+    font-family: primary;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: black;
+    margin: 10px 0 30px 0;
+    padding: 0 25px 0 25px;
+}
+
+.breakfast-sides {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'side-1'
+        'side-2'
+        'side-3'
+        'side-4'
+        'side-5'
+        'side-6'
+        'side-7'
+    ;
+    grid-template-rows: 100px 30px 30px 30px 30px 30px 30px 30px;
+    justify-self: center;
+    font-size: 15px;
+}
+
+.breakfast-sides .menu-section {
+    grid-area: section;
+}
+
+.side {
+    display: grid;
+    grid-template-areas: 
+        'item price'
+    ;
+    grid-template-columns: 250px 10px;
+    justify-self: center;
+
+}
+
+.side-item {
+    grid-area: item;
+}
+
+.side-price {
+    grid-area: price;
+    font-weight: bold;
+}
+
+.side-1 {
+    grid-area: side-1;
+}
+
+.side-2 {
+    grid-area: side-2;
+}
+
+.side-3 {
+    grid-area: side-3;
+}
+
+.side-4 {
+    grid-area: side-4;
+}
+
+.side-5 {
+    grid-area: side-5;
+}
+
+.side-6 {
+    grid-area: side-6;
+}
+
+.side-7 {
+    grid-area: side-7;
+}
+
+.breakfast-juices {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'juice-1'
+        'juice-2'
+        'juice-3'
+    ;
+    justify-items: center;
+    justify-self: center;
+    margin: 30px 0 0 0;
+}
+
+.juice-1 {
+    grid-area: juice-1;
+}
+
+.juice-2 {
+    grid-area: juice-2;
+}
+
+.juice-3 {
+    grid-area: juice-3;
+}
+
+.breakfast-drinks {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'drink-1'
+        'drink-2'
+        'drink-3'
+        'drink-4'
+    ;
+    grid-template-rows: 80px 50px 50px 50px 50px;
+    justify-items: center;
+    justify-self: center;
+    font-size: 15px;
+}
+
+.drink {
+    display: grid;
+    grid-template-areas: 
+        'item price'
+    ;
+    grid-template-columns: 300px 10px;
+    justify-self: center;
+}
+
+.drink-1 {
+    grid-area: drink-1;
+}
+
+.drink-2 {
+    grid-area: drink-2;
+}
+
+.drink-3{
+    grid-area: drink-3;
+}
+
+.drink-4 {
+    grid-area: drink-4;
+}
+
+.lunch-menu {
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'hours'
+        'soup'
+        'salads'
+        'specials'
+        'burgers'
+        'sandwiches'
+    ;
+    margin: 50px 0 0 0;
+    background-color:rgba(255, 255, 255, 0.9);
+    margin: 50px 0 0 0;
+    padding: 15px 0 15px 0;
+    font-family: primary;
+    color: black;
+    justify-items: center;
+}
+
+.lunch-menu h3 {
+    grid-area: title;
+    font-size: 15pt;
+    color:rgba(150, 50, 50);
+    text-align: center;
+}
+
+.lunch-soup {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'soup-1'
+    ;
+    justify-items: center;
+    justify-self: center;
+}
+
+.soup-1 {
+    grid-area: soup-1;
+}
+
+.lunch-salads {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'salad-1'
+        'salad-2'
+        'salad-3'
+    ;
+    justify-items: center;
+    justify-self: center;
+}
+
+.salad-1 {
+    grid-area: salad-1;
+}
+
+.salad-2 {
+    grid-area: salad-2;
+}
+
+.salad-3 {
+    grid-area: salad-3;
+}
+
+.dinner-menu {
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'hours'
+        'soup'
+        'salads'
+        'entrees'
+        'desserts'
+    ;
+    margin: 50px 0 0 0;
+    background-color:rgba(255, 255, 255, 0.9);
+    margin: 50px 0 0 0;
+    padding: 15px 0 15px 0;
+    font-family: primary;
+    color: black;
+    justify-items: center;
+}
+
+.dinner-menu h3 {
+    grid-area: title;
+    font-size: 15pt;
+    color:rgba(150, 50, 50);
+    text-align: center;
+}
+
+.dinner-soup {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'soup-1'
+    ;
+    justify-items: center;
+    justify-self: center;
+}
+
+.soup-1 {
+    grid-area: soup-1;
+}
+
+.dinner-apps {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.app {
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+}
+
+.dinner-desserts {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}
+
+.brunch-menu {
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'hours'
+        'soup'
+        'salads'
+        'specials'
+        'burgers'
+        'sandwiches'
+    ;
+    margin: 50px 0 0 0;
+    background-color:rgba(255, 255, 255, 0.9);
+    margin: 50px 0 0 0;
+    padding: 15px 0 30px 0;
+    font-family: primary;
+    color: black;
+    justify-items: center;
+}
+
+.brunch-menu h3 {
+    color:rgba(150, 50, 50)
+}
+
+.brunch-sides {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'side-1'
+        'side-2'
+        'side-3'
+        'side-4'
+        'side-5'
+        'side-6'
+        'side-7'
+        'side-8'
+    ;
+    grid-template-rows: 75px 30px 30px 30px 30px 30px 30px 30px 30px;
+    justify-self: center;
+    font-size: 15px;
+}
+
+.brunch-sides .menu-section {
+    grid-area: section;
+}
+
+.brunch-juices {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'juice-1'
+        'juice-2'
+        'juice-3'
+        'juice-4'
+    ;
+    grid-template-rows: 75px 30px 30px 30px 30px;
+    justify-self: center;
+    font-size: 15px;
+}
+
+.juice {
+    display: grid;
+    grid-template-areas: 
+        'item price'
+    ;
+    grid-template-columns: 250px 10px;
+    justify-self: center;
+
+}
+
+.brunch-drinks {
+    display: grid;
+    grid-template-areas: 
+        'section'
+        'drink-1'
+        'drink-2'
+        'drink-3'
+        'drink-4'
+    ;
+    grid-template-rows: 80px 30px 30px 30px 30px;
+    justify-items: center;
+    justify-self: center;
+    font-size: 15px;
+}
+
+.drink-price {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3149,6 +4207,10 @@ footer {
     .galleryContainer {
         height: 687px;
     }
+
+    .breakfast-entrees {
+        padding: 0 300px 0 300px;
+    }
 }
 
 @media screen and (min-width: 1150px) { 
@@ -3285,8 +4347,8 @@ footer {
 
     .header {
         grid-template-areas: 
-            "logo . mill cabin lodgings attractions . calendar map phone .";
-        grid-template-columns: 40% auto 100px 100px 140px 175px 50px 50px 50px 50px 10px;
+            "logo . mill menu cabin lodgings attractions . calendar map phone .";
+        grid-template-columns: 40% auto 100px 100px 100px 140px 175px 50px 50px 50px 50px 10px;
     }
 
     .bars {
