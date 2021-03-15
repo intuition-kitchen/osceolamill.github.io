@@ -61,14 +61,19 @@ a:hover {
 }
 
 .subheader {
-    background-color: #68923D;
     width: 100%;
     padding: 20px 0;
     text-align: center;
     font-family: arial;
     letter-spacing: 2px;
+}
 
+.sub1 {
+    background-color: #68923D;
+}
 
+.sub2 {
+    background-color: #333333;
 }
 
 .hosts {
@@ -84,7 +89,7 @@ a:hover {
     justify-items: start;
     width: 100%;
     padding: 10px 0 15px 0;
-    background-image: url(img/paddy/background-30.jpg);
+    background-image: url(img/paddy/shenandoahs.jpg);
     background-size: cover;
     color: black;
 
@@ -166,4 +171,60 @@ a:hover {
 
 .pure-ig {
     grid-area: pure-ig;
+}
+
+
+
+.menu {
+    width: 100%;
+    padding: 35px 0 0 0;
+    color: black;
+    text-align: center;
+}
+
+.menu-item {
+    font-family: primary;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu-descr {
+    font-family: secondary;
+    font-size: 15px;
+    padding: 20px 50px 15px 50px;
+}
+
+.menu-price {
+    font-family: primary;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 50px 0;
+}
+
+.menu1 {
+    grid-area: menu1;
+}
+
+.menu2 {
+    grid-area: menu2;
+}
+
+.menu3 {
+    grid-area: menu3
+}
+
+.menu4 {
+    grid-area: menu4;
+}
+
+.menu5 {
+    grid-area: menu5;
+}
+
+.menu6 {
+    grid-area: menu6;
+}
+
+.menu7 {
+    grid-area: menu7;
 }
