@@ -65,11 +65,14 @@ a:hover {
     padding: 20px 0;
     text-align: center;
     font-family: arial;
-    letter-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 .sub1 {
     background-color: #68923D;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 .sub2 {
@@ -245,7 +248,7 @@ a:hover {
     background-image: url(img/paddy/music.jpg);
     background-size: cover;
     width: 100%;
-    padding: 25px 0 25px 0;
+    padding: 35px 0 35px 0;
 }
 
 .band-name {
@@ -259,7 +262,7 @@ a:hover {
     font-family: secondary;
     font-size: 14px;
     text-align: center;
-    padding: 15px 50px 0 50px;
+    padding: 25px 50px 35px 50px;
 }
 
 .band-members {
@@ -271,7 +274,6 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px 20px;
-    padding: 20px 0 0 0;
 }
 
 .role {
@@ -290,7 +292,7 @@ a:hover {
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: 20px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .music-time {
