@@ -303,13 +303,9 @@ a:hover {
     text-shadow: none;
 }
 
-
-.pairing-1 {
+.pairing {
     display: grid;
-    grid-template-areas: 
-    'food wine'
-    'food beer';
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 180px 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px 10px;
     align-items: center;
@@ -318,76 +314,42 @@ a:hover {
     padding: 10px 10px 10px 10px;
 }
 
+.pairing-1 {
+    grid-template-areas: 
+    'food wine'
+    'food beer';
+}
+
 .pairing-2 {
-    display: grid;
     grid-template-areas: 
     'food wine-single'
     'food beer';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px 10px;
-    align-items: center;
-    justify-items: start;
-    color: black;
-    padding: 10px 10px 10px 10px;
     background-color: #eeeeee;
 }
 
 .pairing-3 {
-    display: grid;
     grid-template-areas: 
     'food wine-single'
     'food beer';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px 10px;
-    align-items: center;
-    justify-items: start;
-    color: black;
-    padding: 10px 10px 10px 10px;
 }
 
 .pairing-4 {
-    display: grid;
     grid-template-areas: 
     'food wine'
     'food beer';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px 10px;
-    align-items: center;
-    justify-items: start;
-    color: black;
-    padding: 10px 10px 10px 10px;
     background-color: #eeeeee;
 }
 
 .pairing-5 {
-    display: grid;
     grid-template-areas: 
     'food wine-single'
     'food beer-single';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px 10px;
-    align-items: center;
-    justify-items: start;
-    color: black;
-    padding: 10px 10px 10px 10px;
 }
 
 .pairing-6 {
-    display: grid;
     grid-template-areas: 
-    'food wine-single'
+    'food wine'
     'food beer-single';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px 10px;
-    align-items: center;
-    justify-items: start;
-    color: black;
-    padding: 10px 10px 10px 10px;
     background-color: #eeeeee;
 
 }
