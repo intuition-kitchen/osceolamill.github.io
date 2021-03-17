@@ -79,6 +79,10 @@ a:hover {
     background-color: #333333;
 }
 
+.sub3 {
+    background-color: #68923D;
+}
+
 .hosts {
     display: grid;
     grid-template-areas: 
@@ -294,7 +298,7 @@ a:hover {
 }
 
 .music-time {
-    background-color:#68923D;
+    background-color:#333333;
     padding: 5px 15px;
     font-family: primary;
     font-size: 15px;
@@ -434,3 +438,38 @@ a:hover {
     height: 40px;
 }
 
+.covid {
+    display: grid;
+    grid-template-areas: 
+        'mask-i mask';
+    grid-template-columns: 100px auto;
+    align-items: center;
+    justify-items: start;
+    background-color: #386d36;
+    padding: 20px;
+}
+
+.masks-i img {
+    height: 75px;
+}
+
+.thank-you {
+    background-color: #68923D;
+    font-family: primary;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.blessing {
+    width: 100%;
+    background-image: url(img/paddy/ireland-31.jpg);
+    background-size: cover;
+    color: white;
+    font-family: primary;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 35px 0 35px 0;
+}
