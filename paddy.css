@@ -79,10 +79,6 @@ a:hover {
     background-color: #333333;
 }
 
-.sub3 {
-    background-color: #333333;
-}
-
 .hosts {
     display: grid;
     grid-template-areas: 
@@ -250,7 +246,6 @@ a:hover {
     width: 100%;
     padding: 35px 0 35px 0;
     text-shadow: 2px 1px black;
-
 }
 
 .band-name {
@@ -307,3 +302,173 @@ a:hover {
     letter-spacing: 2px;
     text-shadow: none;
 }
+
+
+.pairing-1 {
+    display: grid;
+    grid-template-areas: 
+    'food wine'
+    'food beer';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-items: start;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.pairing-2 {
+    display: grid;
+    grid-template-areas: 
+    'food wine-single'
+    'food beer';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-items: start;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    background-color: #eeeeee;
+}
+
+.pairing-3 {
+    display: grid;
+    grid-template-areas: 
+    'food wine-single'
+    'food beer';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-items: start;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.pairing-4 {
+    display: grid;
+    grid-template-areas: 
+    'food wine'
+    'food beer';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-items: start;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    background-color: #eeeeee;
+}
+
+.pairing-5 {
+    display: grid;
+    grid-template-areas: 
+    'food wine-single'
+    'food beer-single';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-items: start;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.pairing-6 {
+    display: grid;
+    grid-template-areas: 
+    'food wine-single'
+    'food beer-single';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+    align-items: center;
+    justify-items: start;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    background-color: #eeeeee;
+
+}
+
+.food {
+    grid-area: food;
+    font-family: primary;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.drink {
+    font-family: secondary;
+    font-size: 14px;
+}
+
+.wine {
+    grid-area: wine;
+    display: grid;
+    grid-template-areas:
+        'wine-i wine1'
+        'wine-i wine2';
+}
+
+.wine-single {
+    grid-area: wine-single;
+    display: grid;
+    grid-template-areas:
+        'wine-i wine1'
+        'wine-i wine1';
+        align-self: center;
+}
+
+.beer {
+    grid-area: beer;
+    display: grid;
+    grid-template-areas:
+    'beer-i beer1'
+    'beer-i beer2';
+}
+
+.beer-single {
+    grid-area: beer-single;
+    display: grid;
+    grid-template-areas:
+        'beer-i beer1'
+        'beer-i beer1';
+        align-self: center;
+}
+
+.wine-1 {
+    grid-area: wine1;
+}
+
+.wine-2 {
+    grid-area: wine2;
+}
+   
+.beer-1 {
+    grid-area: beer1;
+}
+
+.beer-2 {
+    grid-area: beer2;
+}
+
+.wine-i {
+    grid-area: wine-i;
+    justify-self: end;
+}
+
+.beer-i {
+    grid-area: beer-i;
+    justify-self: end;
+}
+
+.wine-i img {
+    height: 40px;
+}
+
+.beer-i img {
+    height: 40px;
+}
+
