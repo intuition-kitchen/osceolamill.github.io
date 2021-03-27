@@ -246,6 +246,10 @@ a:hover {
     grid-area: menu7;
 }
 
+.kids {
+    padding: 10px 0 40px 0;
+}
+
 .band-pic {
     width: 100%;
     padding: 0;
