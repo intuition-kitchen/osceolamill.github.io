@@ -96,7 +96,7 @@ a:hover {
     justify-items: start;
     width: 100%;
     padding: 10px 0 15px 0;
-    background-image: url(img/shenandoahs.jpg);
+    background-image: url(img/events/sundays-at-rockbridge/shenandoahs.jpg);
     background-size: cover;
     color: black;
 
@@ -259,7 +259,7 @@ a:hover {
 
 .music {
     background-color: #333333;
-    background-image: url(img/music.jpg);
+    background-image: url(img/events/sundays-at-rockbridge/music.jpg);
     background-size: cover;
     width: 100%;
     padding: 35px 0 35px 0;
@@ -329,7 +329,7 @@ a:hover {
     grid-template-columns: 100px auto;
     align-items: center;
     justify-items: start;
-    background-color: #386d36;
+    background-color: #6b6b6b;
     padding: 20px;
 }
 
