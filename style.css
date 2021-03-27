@@ -19,12 +19,12 @@ a {
 
 @font-face {
     font-family: primary;
-    src: url(/font/crimson-text-regular.ttf)
+    src: url(/font/crimson-text.ttf)
 }
 
 @font-face {
     font-family: secondary;
-    src: url(/font/playfair-display-variable.ttf)
+    src: url(/font/playfair-display.ttf)
 }
 
 /* HEADER -----------------------------------------------------------------------------------------*/
@@ -4476,6 +4476,14 @@ footer {
     .valentine-details {
         font-size: 18px;
     }
+
+    .included-head {
+        padding: 20px 0 0 0;
+    }
+
+    .valentine-booking {
+        padding: 20px 10px 10px 20px;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -4494,5 +4502,13 @@ footer {
 
     .mothers-day {
         align-self: center;
+    }
+
+    .included-head {
+        padding: 20px 0 0 0;
+    }
+
+    .valentine-booking {
+        padding: 20px 10px 10px 20px;
     }
 }
