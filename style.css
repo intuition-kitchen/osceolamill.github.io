@@ -1991,7 +1991,7 @@ footer {
 .mothers-day-sub {
     background-color:rgba(85, 60, 49, 0.9);
     font-family: primary;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     padding: 20px;
 }
@@ -3998,6 +3998,10 @@ footer {
     display: grid;
 }
 
+.mothers-day {
+    margin: 20px 0 0 0;
+}
+
 @media screen and (min-width: 750px) {
     .galleryContainer {
         height: 468px;
@@ -4170,7 +4174,11 @@ footer {
 
 @media screen and (min-width: 1050px) { 
     .galleryContainer {
-        height: 656px;
+        height: 645px;
+    }
+
+    .valentine-container {
+        height: 550px;
     }
 
     .valentine-header {
@@ -4473,6 +4481,10 @@ footer {
 }
 
 @media screen and (min-width: 1350px) {
+
+    .valentine-container {
+        height: 650px;
+    }
     .valentine-details {
         font-size: 18px;
     }
@@ -4483,6 +4495,11 @@ footer {
 
     .valentine-booking {
         padding: 20px 10px 10px 20px;
+    }
+
+    .mothers-day {
+        padding: 0;
+        margin: 0;
     }
 }
 
