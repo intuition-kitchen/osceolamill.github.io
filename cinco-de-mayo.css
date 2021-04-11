@@ -1,0 +1,354 @@
+:root {
+    --yellow: #ebae54;
+    --blue: #32aeb6;
+    --purple: #92278f;
+    --orange: #f95158;
+}
+
+@font-face {
+    font-family: primary;
+    src: url(/font/crimson-text.ttf)
+}
+
+@font-face {
+    font-family: secondary;
+    src: url(/font/playfair-display.ttf)
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 12pt;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--red);
+    text-decoration: none;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.header img {
+    width: 100%;
+}
+
+.subheader {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.sub1 {
+    background-color: var(--yellow);
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.sub2 {
+    background-color: #333333;
+}
+
+.sub3 {
+    background-color: #68923D;
+}
+
+.hosts {
+    display: grid;
+    grid-template-areas: 
+        'rockbridge rockbridge-web rockbridge-fb rockbridge-ig'
+        'osceola osceola-web osceola-fb osceola-ig'
+        'intuition intuition-web intuition-fb intuition-ig';
+    grid-template-columns: auto 60px 55px 55px;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    width: 100%;
+    padding: 10px 0 15px 0;
+    background-image: url(img/events/sundays-at-rockbridge/shenandoahs.jpg);
+    background-size: cover;
+    color: black;
+
+}
+
+.logo {
+    justify-self: start;
+    width: 180px;
+    padding: 10px 0 0 20px;
+}
+
+.rockbridge {
+    grid-area: rockbridge;
+}
+
+.osceola {
+    grid-area: osceola;
+}
+
+.intuition {
+    grid-area: intuition;
+}
+
+.pure {
+    grid-area: pure;
+}
+
+.website {
+    width: 40px;
+}
+
+.rockbridge-web {
+    grid-area: rockbridge-web;
+}
+
+.osceola-web {
+    grid-area: osceola-web;
+}
+
+.intuition-web {
+    grid-area: intuition-web;
+}
+
+.pure-web {
+    grid-area: pure-web;
+}
+
+.social {
+    width: 40px;
+}
+
+.rockbridge-fb {
+    grid-area: rockbridge-fb;
+}
+
+.rockbridge-ig {
+    grid-area: rockbridge-ig;
+}
+
+.osceola-fb {
+    grid-area: osceola-fb;
+}
+
+.osceola-ig {
+    grid-area: osceola-ig;
+}
+
+.intuition-fb {
+    grid-area: intuition-fb;
+}
+
+.intuition-ig {
+    grid-area: intuition-ig;
+}
+
+.pure-fb {
+    grid-area: pure-fb;
+}
+
+.pure-ig {
+    grid-area: pure-ig;
+}
+
+
+
+.menu {
+    width: 100%;
+    padding: 35px 0 0 0;
+    color: black;
+    text-align: center;
+}
+
+.menu-item {
+    font-family: primary;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-descr {
+    font-family: secondary;
+    font-size: 14px;
+    padding: 20px 50px 10px 50px;
+}
+
+.menu-price {
+    font-family: primary;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 40px 0;
+}
+
+.menu-extra {
+    font-family: primary;
+    font-size: 14px;
+    font-style: italic;
+    padding: 0 0 40px 0;
+}
+
+.menu-price-1 {
+    font-family: primary;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+}
+
+.menu1 {
+    grid-area: menu1;
+}
+
+.menu2 {
+    grid-area: menu2;
+}
+
+.menu3 {
+    grid-area: menu3
+}
+
+.menu4 {
+    grid-area: menu4;
+}
+
+.menu5 {
+    grid-area: menu5;
+}
+
+.menu6 {
+    grid-area: menu6;
+}
+
+.menu7 {
+    grid-area: menu7;
+}
+
+.kids {
+    padding: 10px 0 40px 0;
+}
+
+.band-pic {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.music {
+    background-color: #333333;
+    background-image: url(img/events/sundays-at-rockbridge/music.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 35px 0 35px 0;
+    text-shadow: 2px 1px black;
+}
+
+.band-name {
+    font-family: primary;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.band-feature {
+    font-family: secondary;
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 50px 35px 50px;
+    text-align: justify;
+}
+
+.band-members {
+    display: grid;
+    grid-template-areas: 
+        'role1 member1'
+        'role2 member2'
+        'role3 member3';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 20px;
+}
+
+.role {
+    justify-self: end;
+    font-family: primary;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.member {
+    font-family: secondary;
+    font-size: 14px;
+}
+
+.music-schedule {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0 0 0 0;
+}
+
+.music-time {
+    background-color:#333333;
+    padding: 5px 15px;
+    font-family: primary;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+.covid {
+    display: grid;
+    grid-template-areas: 
+        'mask-i mask';
+    grid-template-columns: 100px auto;
+    align-items: center;
+    justify-items: start;
+    background-color: #6b6b6b;
+    padding: 20px;
+}
+
+.masks-i img {
+    height: 75px;
+}
+
+.thank-you {
+    background-color: #b35b09;
+    font-family: primary;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
+}
